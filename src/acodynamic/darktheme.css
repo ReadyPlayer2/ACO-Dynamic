@@ -1,0 +1,36 @@
+// Background
+.root {
+    -fx-background-color: #c1c1c1;
+}
+
+// Buttons
+.startButton {
+    -fx-background-color: #33cc00;
+}
+.stopButton {
+    -fx-background-color: #ff0000;
+}
+.genericButton {
+    -fx-background-color: #ffff00;
+}
+
+.text-area .content {
+    -fx-background-color: #edfded
+}
+
+//Menus
+.menu {
+    -fx-background-color: darkgrey;
+}
+.menu-bar {
+    -fx-background-color: darkgrey;
+}
+.menu-item {
+    -fx-background-color: darkgrey;
+}
+.menu-item:focused {
+     -fx-background-color: grey;    
+}
+.separator {
+    -fx-background-color: darkgray;
+}
