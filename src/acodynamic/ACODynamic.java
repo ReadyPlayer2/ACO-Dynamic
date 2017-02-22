@@ -54,7 +54,7 @@ import javafx.stage.Screen;
 import javafx.stage.Stage;
 
 /**
- * @author Jack Dunning 11013982
+ * @author ReadyPlayer2
  */
 public class ACODynamic extends Application implements Serializable {
     // Serialize ID

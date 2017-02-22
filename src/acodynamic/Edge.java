@@ -9,7 +9,7 @@ import java.util.List;
 import javafx.scene.shape.Line;
 
 /**
- * @author Jack Dunning 11013982
+ * @author ReadyPlayer2
  */
 public class Edge extends Line implements Serializable {
     // Serialize ID

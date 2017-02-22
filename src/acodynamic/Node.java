@@ -10,7 +10,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 
 /**
- * @author Jack Dunning 11013982
+ * @author ReadyPlayer2
  */
 public class Node extends Circle implements Serializable {
     // Serialize ID

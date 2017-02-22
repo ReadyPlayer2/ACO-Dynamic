@@ -6,7 +6,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 
 /**
- * @author Jack Dunning 11013982
+ * @author ReadyPlayer2
  */
 public class Ant extends Rectangle {    
     private final int antID;
