@@ -36,52 +36,26 @@ public class Node extends Circle implements Serializable {
         this.nodeID = id;
     }
 
-    /**
-     * Gets the nodes ID
-     * @return nodeID - the node id
-     */
     public int getNodeID() {
         return nodeID;
     }
 
-    /**
-     * Gets the nodes x position
-     * @return x - the x position
-     */
     public double getX() {
         return super.getCenterX();
     }
 
-    /**
-     * Gets the nodes y position
-     * @return y - y position
-     */
     public double getY() {
         return super.getCenterY();
     }
 
-
-    /**
-     * Gets the number of connections the node has
-     * @return connectionsCount
-     */
     public int getConnectionsCount() {
         return connectedNodes.size();
     }
 
-
-    /**
-     * Gets if the node is highlighted
-     * @return highlighted - highlighted
-     */
     public boolean isHighlighted() {
         return highlighted;
     }
 
-    /**
-     * Sets the if the node is highlighted
-     * @param highlighted - true if highlighted
-     */
     public void setHighlighted(boolean highlighted) {
         this.highlighted = highlighted;
         
@@ -99,18 +73,10 @@ public class Node extends Circle implements Serializable {
         }
     }
 
-    /**
-     * Gets the source
-     * @return source
-     */
     public boolean isSource() {
         return source;
     }
 
-    /**
-     * Sets the node as source if true
-     * @param source - true if source
-     */
     public void setSource(boolean source) {
         this.source = source;
 
@@ -123,18 +89,10 @@ public class Node extends Circle implements Serializable {
         }
     }
 
-    /**
-     * Gets the destination
-     * @return destination
-     */
     public boolean isDestination() {
         return destination;
     }
 
-    /**
-     * Sets this node as destination if true
-     * @param destination - true if destination
-     */
     public void setDestination(boolean destination) {
         this.destination = destination;
 
@@ -147,10 +105,6 @@ public class Node extends Circle implements Serializable {
         }
     }
 
-    /**
-     * Gets the list of connected nodes
-     * @return connectedNodes
-     */
     public List<Node> getConnectedNodes() {
         return connectedNodes;
     }
@@ -183,26 +137,14 @@ public class Node extends Circle implements Serializable {
         }
     }
 
-    /**
-     * Gets the list of connected edges
-     * @return connectedEdges
-     */
     public List<Edge> getConnectedEdges() {
         return connectedEdges;
     }
     
-    /**
-     * Add a connected edge
-     * @param e - the edge to add
-     */
     public void addConnectedEdge(Edge e) {
         connectedEdges.add(e);
     }
     
-    /**
-     * Remove a connected edge
-     * @param e - the edge to remove
-     */
     public void removeConnectedEdge(Edge e) {
         connectedEdges.remove(e);
     }

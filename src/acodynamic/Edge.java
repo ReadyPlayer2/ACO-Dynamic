@@ -39,34 +39,18 @@ public class Edge extends Line implements Serializable {
         this.traffic = 1.0;
     }
 
-    /**
-     * Gets the edge id
-     * @return edgeID
-     */
     public int getEdgeID() {
         return edgeID;
     }
 
-    /**
-     * Gets the list of connected nodes (max 2)
-     * @return connectedNodes
-     */
     public List<Node> getConnectedNodes() {
         return connectedNodes;
     }
 
-    /**
-     * Adds a connected node
-     * @param n - the node to be added
-     */
     public void addConnectedNode(Node n) {
         connectedNodes.add(n);
     }
 
-    /**
-     * Gets the quantity of pheromone on this edge
-     * @return pheromone - the pheromone value
-     */
     public double getPheromone() {
         return Math.round(pheromone);
     }
@@ -113,42 +97,22 @@ public class Edge extends Line implements Serializable {
         }
     }
 
-    /**
-     * Gets the cost to traverse the edge
-     * @return cost
-     */
     public double getCost() {
         return cost * getTraffic();
     }    
 
-    /**
-     * Gets the traffic for this edge
-     * @return traffic
-     */
     public double getTraffic() {
         return traffic;
     }
     
-    /**
-     * Sets the traffic for this edge
-     * @param traffic the traffic value
-     */
     public void setTraffic(double traffic) {
         this.traffic = traffic;
     }
     
-    /**
-     * Adds traffic to this edge
-     * @param amount the value to increase traffic
-     */
     public void addTraffic(double amount) {
         this.traffic += amount;
     }
     
-    /**
-     * Removes traffic from this edge
-     * @param amount the value to decrease traffic
-     */
     public void reduceTraffic(double amount) {
         if (this.traffic - amount > 1.0) {
             this.traffic -= amount;
