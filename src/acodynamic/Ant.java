@@ -32,38 +32,74 @@ public class Ant extends Rectangle {
         this.nodesTaken = new Stack<>();
     }
     
+    /**
+     * Gets the ants id
+     * @return antID
+     */
     public int getAntID() {
         return antID;
     }
     
+    /**
+     * Gets the center x
+     * @return x
+     */
     public double getCenterX() {
         return getX() + getWidth() / 2;
     }
     
+    /**
+     * Gets the center y
+     * @return y
+     */
     public double getCenterY() {
         return getY() + getHeight() / 2;
     }
     
+    /**
+     * Gets the current node
+     * @return currentNode
+     */
     public Node getCurrentNode() {
         return currentNode;
     }
 
+    /**
+     * Sets the current node
+     * @param currentNode the current node
+     */
     public void setCurrentNode(Node currentNode) {
         this.currentNode = currentNode;
     }
 
+    /**
+     * Sets the current edge
+     * @param currentEdge the current edge
+     */
     public void setCurrentEdge(Edge currentEdge) {
         this.currentEdge = currentEdge;
     }
 
+    /**
+     * Gets the next node
+     * @return nextNode
+     */
     public Node getNextNode() {
         return nextNode;
     }
 
+    /**
+     * Sets the next node
+     * @param nextNode the next node
+     */
     public void setNextNode(Node nextNode) {
         this.nextNode = nextNode;
     }
 
+    /**
+     * Gets if the ant is outward bound
+     * @return outwardBound
+     */
     public boolean isOutwardBound() {
         return outwardBound;
     }
@@ -81,6 +117,10 @@ public class Ant extends Rectangle {
         }
     }
 
+    /**
+     * Gets the edges taken
+     * @return edgesTaken
+     */
     public Stack<Edge> getEdgesTaken() {
         return edgesTaken;
     }
@@ -109,9 +149,14 @@ public class Ant extends Rectangle {
         return this.edgesTaken.peek();
     }
 
+    /**
+     * Gets the nodes taken
+     * @return nodesTaken
+     */
     public Stack<Node> getNodesTaken() {
         return nodesTaken;
     }
+
     
     /**
      * Pushes to the node taken stack
