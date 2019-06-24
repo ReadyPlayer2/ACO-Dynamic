@@ -227,6 +227,7 @@ public class ACODynamic extends Application implements Serializable {
         window = primaryStage;
         window.setTitle("ACODynamic");
         window.setFullScreen(false);
+        window.setMaximized(true);
         window.setFullScreenExitHint("Press ESC to close");
         window.setResizable(true);
         
