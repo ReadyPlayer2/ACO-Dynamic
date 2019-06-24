@@ -2,7 +2,7 @@
 JavaFX based GUI for Implementation of Ant Colony Optimisation as a simulation for point-to-point shortest path problem.
 
 <p align="center">
-  <img width="460" height="300" src="images/example.PNG">
+  <img width="720" height="470" src="images/example.PNG">
 </p>
 
 Uses Ant System and Max-Min Ant System algorithms (in a basic/crude form). Allows for nodes to be generated using Java's Random class and uses a proximity based system for connecting nodes with edges.
@@ -10,12 +10,12 @@ Uses Ant System and Max-Min Ant System algorithms (in a basic/crude form). Allow
 ## Features
 ### Run simulations on an environment  
 <p align="center">
-  <img width="460" height="200" src="images/simulation.PNG">
+  <img width="438" height="152" src="images/simulation.PNG">
 </p>
 
 ### Store simulation best route logs  
 <p align="center">
-  <img width="460" height="200" src="images/logging.PNG">
+  <img width="483" height="254" src="images/logging.PNG">
 </p>
 
 ### Configure the number of ants, number of nodes, and pheromone multiplier  
