@@ -226,9 +226,10 @@ public class ACODynamic extends Application implements Serializable {
         // Initialise and name the window
         window = primaryStage;
         window.setTitle("ACODynamic");
-        window.setFullScreen(true);
+        window.setFullScreen(false);
+        window.setMaximized(true);
         window.setFullScreenExitHint("Press ESC to close");
-        window.setResizable(false);
+        window.setResizable(true);
         
         // Menus and MenuItems
         file.getItems().addAll(newFile, openEnvironment, saveEnvironment, separator, exit);
