@@ -5,7 +5,7 @@ JavaFX based GUI for Implementation of Ant Colony Optimisation as a simulation f
   <img width="460" height="300" src="images/example.PNG">
 </p>
 
-Uses Ant System and Max-Min Ant System algorithms (in basic form). Allows for nodes to be generated using Java's Random class and uses a proximity based system for connecting nodes with edges.
+Uses Ant System and Max-Min Ant System algorithms (in a basic/crude form). Allows for nodes to be generated using Java's Random class and uses a proximity based system for connecting nodes with edges.
 
 ## Features
 ### Run simulations on an environment  
@@ -23,8 +23,11 @@ Uses Ant System and Max-Min Ant System algorithms (in basic form). Allows for no
   <img width="470" height="180" src="images/settings.PNG">
 </p>
 
-### Dynamically update the nodes and edges (add edges+nodes / remove edges+nodes / add traffic / remove traffic)  
-All of these changes will be logged so you can use them in analysis.
+### Dynamically update the environment
+- Add nodes+edges
+- Remove nodes+edges
+- Add traffic to edges
+- Remove traffic to edges
 
 ## maven build & run
 - Download maven and add to PATH.  
